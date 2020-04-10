@@ -1,17 +1,20 @@
-1. 이해
-======
+1.이해
+=====
+
 문자열 s는 하나 이상의 공백문자로 구분된 문자열이다. 
 각 '단어'의 짝수번째(0 포함) 알파벳은 대문자로
 홀수번째 알파벳은 소문자로 문자열을 리턴
 ※문자열 전체의 짝/홀수가아닌 '단어'의 짝홀수로 판단
 
-2. 계획
+2.계획
 =====
+
 문자열을 공백을 기준으로자른다
 for로 각 단어 인덱스 하나씩 돌면서 i가 0 포함 짝수는  toUpperCase(), 홀수는 toLowerCase() 를 실행하여 result 에 저장한다
 
-3. 실행
-======
+3.실행
+=====
+
 expect(solution('hello new world')).toBe('HeLlO NeW WoRlD');
 expect(solution('wanna go home')).toBe('WaNnA Go HoMe');
 
